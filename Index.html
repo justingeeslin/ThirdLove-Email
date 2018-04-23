@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Email Receipt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<style type="text/css" id="hs-inline-css">
+
+.preheader { display:none !important; visibility:hidden; opacity:0; color:transparent; height:0; width:0; }
+
+/* CLIENT-SPECIFIC STYLES */
+body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+img { -ms-interpolation-mode: bicubic; }
+
+/* RESET STYLES */
+img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+table { border-collapse: collapse !important; }
+body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 400px) {
+    .mobile-hide {
+        display: none !important;
+    }
+    .mobile-center {
+        text-align: center !important;
+    }
+}
+
+/* ANDROID CENTER FIX */
+div[style*="margin: 16px 0;"] { margin: 0 !important; }
+
+
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+	-webkit-text-size-adjust: 100% !important;
+	-ms-text-size-adjust: 100% !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+img {
+	border: 0 !important;
+	outline: none !important;
+    /*width: 100%;
+    height: auto;*/
+}
+p {
+	Margin: 0px !important;
+	Padding: 0px !important;
+}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0px;
+	mso-table-rspace: 0px;
+}
+td, a, span {
+	border-collapse: collapse;
+	mso-line-height-rule: exactly;
+}
+img td, div {
+	line-height: normal;
+}
+.ExternalClass * {
+	line-height: 100%;
+}
+
+input {
+	display: none !important;
+}
+
+.contact a {color:#666666!important; text-decoration:none!important;}
+
+.inn a:hover{color:#e6c6cb !important;}
+
+.item a:hover {
+    text-decoration: underline !important;
+}
+
+@media only screen and (min-width:481px) and (max-width:712px) {
+.em_wrapper {
+	width: 100% !important;
+}
+.em_wrapper2 {
+	width: 100% !important;
+	/*display: block !important;*/
+	display: block;
+	text-align: center !important;
+	line-height: 30px !important;
+}
+.em_hide {
+	display: none !important;
+}
+div[class=em_hide_desktop] {
+	display: table !important;
+	float: none !important;
+	width: 100% !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+#em_drop:checked + .inn {
+	margin-top: 0%;
+}
+div .link {
+	position: relative !important;
+	width: 100% !important;
+	padding: 0px !important;
+	right: 0px !important;
+	top: 0px !important;
+	overflow: hidden !important;
+	transition: all 1.0s ease-in-out 0s;
+	-webkit-transition: all 1.0s ease-in-out 0s;
+	-o-transition: all 1.0s ease-in-out 0s;
+	height: auto !important;
+}
+div .inn {
+	transition: all 1.0s ease-in-out 0s;
+	-webkit-transition: all 1.0s ease-in-out 0s;
+	-o-transition: all 1.0s ease-in-out 0s;
+	margin-top: -100%;
+	padding: 0px 10px !important;
+	overflow: hidden !important;
+}
+}
+
+@media only screen and (max-width:400px) {
+.em_wrapper {
+	width: 100% !important;
+}
+.em_wrapper2 {
+	width: 100% !important;
+	/*display: block !important;*/
+	display: block;
+	text-align: center !important;
+	line-height: 30px !important;
+}
+.em_hide {
+	display: none !important;
+}
+div[class=em_hide_desktop] {
+	display: table !important;
+	float: none !important;
+	width: 100% !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+#em_drop:checked + .inn {
+	margin-top: 0%;
+}
+div .link {
+	position: relative !important;
+	width: 100% !important;
+	padding: 0px !important;
+	right: 0px !important;
+	top: 0px !important;
+	overflow: hidden !important;
+	transition: all 1.0s ease-in-out 0s;
+	-webkit-transition: all 1.0s ease-in-out 0s;
+	-o-transition: all 1.0s ease-in-out 0s;
+	height: auto !important;
+}
+div .inn {
+	transition: all 1.0s ease-in-out 0s;
+	-webkit-transition: all 1.0s ease-in-out 0s;
+	-o-transition: all 1.0s ease-in-out 0s;
+	margin-top: -155%;
+	padding: 0px 10px !important;
+	overflow: hidden !important;
+}
+ /* Display block allows us to stack elements */
+            *[class="mobile-column"] {display: block;}
+
+            /* Some more stacking elements */
+            *[class="mob-column"] {float: none !important;width: 100% !important;}
+
+            /* Hide stuff */
+            *[class="hide"] {display:none !important;}
+
+            /* This sets elements to 100% width and fixes the height issues too, a god send */
+            *[class="100p"] {width:100% !important; height:auto !important;}
+
+            /* For the 2x2 stack */
+            *[class="condensed"] {padding-bottom:40px !important; display: block;}
+
+            /* Centers content on mobile */
+            *[class="center"] {text-align:center !important; width:100% !important; height:auto !important;}
+
+            /* 100percent width section with 20px padding */
+            *[class="100pad"] {width:100% !important; padding:20px;}
+
+            /* 100percent width section with 20px padding left & right */
+            *[class="100padleftright"] {width:100% !important; padding:0 20px 0 20px;}
+
+            /* 100percent width section with 20px padding top & bottom */
+            *[class="100padtopbottom"] {width:100% !important; padding:20px 0px 20px 0px;}
+
+
+}
+</style>
+<!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+</head>
+<body style="margin: 0 !important; padding: 0 !important; background-color: #ffffff;" bgcolor="#ffffff">
+
+<!-- PRE-HEADER TEXT -->
+  <span class="preheader" style="display: none !important; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">You already love your new bra. Why don’t you meet some other styles? Even if you're just picking up dry cleaning and watching Netflix, why not feel like a million bucks? Dream up plans in our Lace Racerback- now back in stock! Beautiful lace. Impeccable fit. You'll feel amazing, wheher it's afternoon, afterwork, or after hours.</span>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" style="background-color: #ffffff;" bgcolor="#ffffff">
+        <!--[if (gte mso 9)|(IE)]>
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="712">
+        <tr>
+        <td align="center" valign="top" width="712">
+        <![endif]-->
+
+
+
+        <table width="712" border="0" cellspacing="0" cellpadding="0" align="center" style="width:712px;margin: 0px auto;" class="em_wrapper">
+        <tbody><tr>
+          <td align="center" bgcolor="#ffffff" class="show"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="table-layout:fixed;" class="em_wrapper">
+              <tbody>
+                <!--[if !mso]><!-- -->
+                <!--FALLBACK-->
+                <tr>
+                  <td height="0"><div class="em_hide_desktop" style="display:none;width:0;overflow:hidden;max-height:0!important;">
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tbody><tr>
+                          <td align="center" valign="middle" height="40"><label for="em_drop"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/d2e4d165-2557-46ea-ba85-5f37820a55b6.png" width="30" height="30" style="display:block;cursor:pointer;margin:10px 0px;" border="0"></label></td>
+                        </tr>
+                      </tbody></table>
+                    </div></td>
+                </tr>
+                <!--ENDFALLBACK-->
+                <!--<![endif]-->
+                <tr>
+                  <td align="center"><!--[if !mso]><!-->
+
+                    <div class="em_relative">
+                      <div class="link">
+                        <input id="em_drop" type="checkbox" style="display:none !important">
+                        <div class="inn" style="margin-left:0px; margin-right:0px; z-index:50;">
+                          <!--<![endif]-->
+                          <!--[if gte mso 9]>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="em_wrapper">
+                                    <tr>
+                                        <td height="60" valign="middle" align="center" width="20%">
+                                <![endif]-->
+                         <a href="https://www.thirdlove.com/" target="_blank" class="em_wrapper2" style="text-decoration:none; width:32%; float:left; display:inline-block; text-align: center;"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/00d95aa6-a931-44a6-9dd9-503df00b2840.png" width="188" height="30" style="display: inline-block; border: 0px; margin: 15px 0px 0px 0px; text-align: center;"></a>
+                          <!--[if gte mso 9]>
+                                </td>
+                                <td height="60" valign="middle" align="center" width="20%">
+                                <![endif]-->
+                          <a href="https://www.thirdlove.com/collections/bras" target="_blank" class="em_wrapper2" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;text-decoration:none;color:#000000;line-height:60px; width:8%; float:left; display:inline-block; text-align: center;">BRAS</a>
+                          <!--[if gte mso 9]>
+                                </td>
+                                <td height="60" valign="middle" align="center" width="20%">
+                                <![endif]-->
+                          <a href="https://www.thirdlove.com/collections/underwear" target="_blank" class="em_wrapper2" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;text-decoration:none;color:#000000;line-height:60px; width:20%; float:left; display:inline-block; text-align: center;">UNDERWEAR</a>
+                          <!--[if gte mso 9]>
+                                </td>
+                                <td height="60" valign="middle" align="center" width="20%">
+                                <![endif]-->
+                         <a href="https://www.thirdlove.com/collections/lounge" target="_blank" class="em_wrapper2" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;text-decoration:none;color:#000000;line-height:60px; width:13%; float:left; display:inline-block; text-align: center;">LOUNGE</a>
+                          <!--[if gte mso 9]>
+                                </td>
+                                <td height="60" valign="middle" align="center">
+                                <![endif]-->
+                          <a href="https://www.thirdlove.com/pages/invite?traffic_source=homepage-nav" target="_blank" class="em_wrapper2" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;text-decoration:none;color:#000000;line-height:60px; float:left; display:inline-block; text-align: center; width:12%;">GET $30</a>
+                           <!--[if gte mso 9]>
+                                 </td>
+                                 <td height="60" valign="middle" align="center">
+                                 <![endif]-->
+                           <a href="https://www.thirdlove.com/account/login" target="_blank" class="em_wrapper2" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;text-decoration:none;color:#000000;line-height:60px; float:left; display:inline-block; text-align: center; width:13%;">MY LOVE</a>
+                          <!--[if gte mso 9]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                          <!--[if !mso]><!-->
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--<![endif]--></td>
+                </tr>
+              </tbody>
+            </table></td>
+        </tr>
+      </tbody></table>
+
+
+
+
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:712px;">
+
+                <tr>
+                    <td width="50%" valign="top" align="center" style="border-color: #ee7f4f; border-top-style: solid; border-top-width:1px;font-size: 1px; line-height: 1px">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding: 25px 10px 10px; background-color: #ffffff;" bgcolor="#ffffff">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="712">
+                    <tr>
+                    <td align="center" valign="top" width="712">
+                    <![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:690px;">
+                            <tr>
+                                <td align="center">
+
+
+
+                                    <img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/794a3ac4-2e90-4956-8186-3b8f30cc4146.png" width="85%" height="auto" alt="Meet our other styles" style="box-sizing: border-box;">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <a href="https://www.thirdlove.com/collections/bras">
+                                    <img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/ed40ea7f-8bae-47c2-9ffb-d0f1f9b509a7.gif" width="75%" height="auto" alt="Even if you're just picking up dry cleaning and watching Netflix, why not feel like a million bucks? | Dream up plans in our Lace Racerback- now back in stock! | Beautiful lace. Impeccable fit. You'll feel amazing, wheher it's afternoon, afterwork, or after hours.">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding: 10px;">
+                                    <a href="https://www.thirdlove.com/collections/bras">
+                                    <img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/9ac9f7c7-e50e-4bec-b358-05fe28cd799c.png" width="125" height="30" alt="SHOP NOW">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; padding: 20px 0px; color:#666666;">
+                                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; color:#575752;">
+                                        You already love your new bra.  Why don’t you&nbsp;meet&nbsp;some&nbsp;other&nbsp;styles?
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                        <td>
+                            <table width="712" border="0" cellspacing="0" cellpadding="20" class="100p" bgcolor="#FFFFFF">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" class="100padtopbottom" width="672">
+                                            <tr>
+                                                <td align="left" class="condensed" valign="top">
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="215">
+                                                        <tr>
+                                                            <td valign="top" align="center">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td width="215" align="center"><a href="https://www.thirdlove.com/products/longline-lace-balconette?view=v1"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/957a024f-1aa3-4d23-9713-27b559b51430.png" width="100%" height="188" alt="Longline Lace Balconette in Stormy Lilac" border="0" /></a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="item" valign="top" width="215" align="center" style="font-size:16px;"><a href="https://www.thirdlove.com/products/longline-lace-balconette?view=v1" style="text-decoration:none; color:#575752;">Longline Lace Balconette
+                                                                                    </a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="20" class="hide"></td>
+                                                <td align="left" class="condensed" valign="top">
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="215">
+                                                        <tr>
+                                                            <td valign="top" align="center">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td width="215" align="center"><a href="https://www.thirdlove.com/products/front-closure-lace-racerback-1?view=v1"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/58111a59-f84e-4087-b87a-df54618ffe80.png" width="100%" height="188" alt="Front Closure Lace Racerback in Graystone" border="0"/></a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="item" valign="top" width="215" align="center" style="font-size:16px;"><a href="https://www.thirdlove.com/products/front-closure-lace-racerback-1?view=v1" style="text-decoration:none; color:#575752;">Front Closure Lace Racerback
+                                                                                    </a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="20" class="hide"></td>
+                                                <td align="left" class="condensed" valign="top">
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="mob-column" width="215">
+                                                        <tr>
+                                                            <td valign="top" align="center">
+                                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td width="215" align="center"><a href="https://www.thirdlove.com/products/24-7-classic-t-shirt-bra-3?view=v1"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/b52d99ac-c0ab-4d44-804e-ae50422bfcaf.png" width="100%" height="188" alt="24/7^TM Classic T-Shirt in Stormy Lilac" border="0"/></a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td valign="top" align="center">
+                                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                                <tr>
+                                                                                    <td class="item" valign="top" width="215" align="center" style="font-size:16px;"><a href="https://www.thirdlove.com/products/24-7-classic-t-shirt-bra-3?view=v1" style="text-decoration:none; color:#575752;">24/7&trade; Classic T-Shirt
+                                                                                    </a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                            <tr>
+                                <td align="center" style=" margin: 35px 0 20px;">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="712">
+                                <tr>
+                                <td align="center" valign="top" width="712">
+                                <![endif]-->
+
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:712px;">
+                                        <tr>
+                                            <td align="center" style="font-family: 'Montserrat', Arial, sans-serif; font-size:16px; line-height:35px; color:#dddddd; margin:0 20px 0px;" class="body-text">
+                                                <a href="https://www.instagram.com/thirdlove/?sc_src=email_828773&sc_lid=55927197&sc_uid=f40Ro2n8Vu&sc_llid=8242&sc_eh=df863551a39e1a1c1&utm_source=Triggered_Abandon_Browse&utm_medium=emarsys_email&utm_campaign=20180416_1907_Triggered_Abandoned-Browse_See-Something_Email3_031418&utm_term=&utm_content=20180416T190900" target="_blank"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/315c277b-425f-4a16-89e5-1891955c6453.png" alt="Instagram"></a>
+                                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                <a href="https://www.facebook.com/thirdlove?sc_src=email_828773&sc_lid=55927198&sc_uid=f40Ro2n8Vu&sc_llid=8242&sc_eh=df863551a39e1a1c1&utm_source=Triggered_Abandon_Browse&utm_medium=emarsys_email&utm_campaign=20180416_1907_Triggered_Abandoned-Browse_See-Something_Email3_031418&utm_term=&utm_content=20180416T190900" target="_blank"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/66293eb9-892f-47a4-823b-2e3cc674a036.png" alt="Facebook"></a>
+                                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                <a href="https://www.pinterest.com/thirdlove/?sc_src=email_828773&sc_lid=55927199&sc_uid=f40Ro2n8Vu&sc_llid=8242&sc_eh=df863551a39e1a1c1&utm_source=Triggered_Abandon_Browse&utm_medium=emarsys_email&utm_campaign=20180416_1907_Triggered_Abandoned-Browse_See-Something_Email3_031418&utm_term=&utm_content=20180416T190900" target="_blank"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/29cb82bc-dc9b-4b55-aed6-b7649e01b0c0.png" alt="Pintrest"></a>
+                                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                                <a href="https://twitter.com/ThirdLove" target="_blank"><img src="https://gallery.mailchimp.com/d26a35185a08b9a9d40e8bf02/images/010a9cc0-e11f-481c-b7b5-3296903fbb84.png" width="33" height="33" alt="Twitter"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%" valign="top" align="center" style="border-color: #ee7f4f; border-top-style: solid; border-top-width:1px;font-size: 1px; line-height: 1px">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="font-family: 'Montserrat', Arial, sans-serif; font-size:11px; line-height:24px; color:#666666;" class="body-text">&copy; 2018 ThirdLove | <span class="contact">350 Rhode Island St. Ste.360. San Francisco, CA.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:712px;">
+                                                    <tr>
+                                                        <td align="center" style="font-family: 'Montserrat', Arial, sans-serif; font-size:12px; line-height:20px; color:#666666; margin:0 20px; padding-bottom: 20px;" class="inn">
+                                                            <a href="https://www.thirdlove.com/account/login" target="_blank" style="color:#666666; text-decoration:none; white-space: nowrap" class="inn">MY LOVE</a>
+                                                            <span style="font-family:arial, sans-serif; font-size:12px; line-height:20px; color:#666666;">&nbsp;&nbsp;</span>
+                                                            <a href="https://help.thirdlove.com/hc/en-us/requests/new?sc_src=email_828773&sc_lid=55927200&sc_uid=f40Ro2n8Vu&sc_llid=8242&sc_eh=df863551a39e1a1c1&utm_source=Triggered_Abandon_Browse&utm_medium=emarsys_email&utm_campaign=20180416_1907_Triggered_Abandoned-Browse_See-Something_Email3_031418&utm_term=&utm_content=20180416T190900" target="_blank" style="color:#666666; text-decoration:none; white-space: nowrap" class="inn">CONTACT US</a>
+                                                            <span style="font-family:arial, sans-serif; font-size:12px; line-height:20px; color:#666666;">&nbsp;&nbsp;</span>
+                                                            <a href="https://help.thirdlove.com/hc/en-us/categories/203978167-Shipping-Returns-and-Exchanges?sc_src=email_828773&sc_lid=55927201&sc_uid=f40Ro2n8Vu&sc_llid=8242&sc_eh=df863551a39e1a1c1&utm_source=Triggered_Abandon_Browse&utm_medium=emarsys_email&utm_campaign=20180416_1907_Triggered_Abandoned-Browse_See-Something_Email3_031418&utm_term=&utm_content=20180416T190900" target="_blank" style="color:#666666; text-decoration:none; white-space: nowrap" class="inn">SHIPPING POLICY</a>
+                                                            <span style="font-family:arial, sans-serif; font-size:12px; line-height:20px; color:#666666;">&nbsp;&nbsp;</span>
+                                                            <a href="https://www.thirdlove.com/pages/invite?traffic_source=homepage-nav" target="_blank" style="color:#666666; text-decoration:none; white-space: nowrap" class="inn">GET $30</a>
+                                                            <span style="font-family:arial, sans-serif; font-size:12px; line-height:20px; color:#666666;">&nbsp;&nbsp;</span>
+                                                            <unsubscribe style="color:#666666; text-decoration:none; white-space: nowrap" class="body-text">Unsubscribe</unsubscribe>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

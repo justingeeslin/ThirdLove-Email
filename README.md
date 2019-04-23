@@ -4,9 +4,9 @@ Email Developer - Pre-Interview Exercise
 
 The email team has been noticing that conversion rates are low on a critical email in their onboarding automation.  After further investigation, they have developed three hypotheses they want to test to get performance back on track:
 
-Current email is not presenting enough different product to engage the user outside their “initial” FitFinder quiz recommendations
-CTAs are not noticeable enough to drive click-through
-Competitor emails are utilizing more visual imagery, gifs and embedded video, which makes ours seem dull in comparison
+- Current email is not presenting enough different product to engage the user outside their “initial” FitFinder quiz recommendations
+- CTAs are not noticeable enough to drive click-through
+- Competitor emails are utilizing more visual imagery, gifs and embedded video, which makes ours seem dull in comparison
 
 Taking this feedback into account, the team has prepared the below brief for a new design:
 
